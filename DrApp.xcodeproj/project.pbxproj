@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6ADB8D1F9BFF3C006894E9 /* Source in Sources */ = {isa = PBXBuildFile; fileRef = 3E6ADB661F96E1DA006894E9 /* Source */; };
 		EDA7AA77AA89B1EF032CBD4D /* Pods_DrApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9220F4E79770CB79E89F9 /* Pods_DrApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -193,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6ADB8D1F9BFF3C006894E9 /* Source in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INSTALL_PATH[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;

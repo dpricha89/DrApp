@@ -10,11 +10,12 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-open class Backend: NSObject, STPBackendAPIAdapter {
+open class Backend: NSObject {
     
     static let sharedClient = Backend()
     var headers: HTTPHeaders = HTTPHeaders()
-
+    
+    /*
     open func signupHost(stripeHost: StripeHost, completion: @escaping (Error?) -> ()) {
         NSLog("Trying to create host")
         Alamofire.request(GlobalConst.hostUrl, method: .post, parameters: stripeHost.toDict(), encoding: JSONEncoding.default, headers: self.headers).validate().responseJSON { response in
@@ -199,4 +200,5 @@ open class Backend: NSObject, STPBackendAPIAdapter {
         })
         
     }
+    */
 }
