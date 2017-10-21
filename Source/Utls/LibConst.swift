@@ -20,28 +20,10 @@ struct LibConst {
     static let alertDelay: TimeInterval = 3.0
     
     // colors
-    static let backgroundColor: UIColor = vengaDark
-    static let facebookButtonColor: UIColor = FlatBlue()
-    static let signupButtonColor: UIColor = FlatWatermelon()
-    static let loginButtonColor: UIColor = vengaBlue
-    static let loginInputOutline: UIColor = FlatGray()
-    static let menuItemColor: UIColor = vengaLightBlue
     static let logoutLabelColor: UIColor = .black
-    static let clipboardButtonColor: UIColor = FlatTeal()
-    static let coinbaseButtonColor: UIColor = FlatSkyBlue()
-    static let amountLabelColor: UIColor = FlatTealDark()
-    static let vengaFieldForgroundColor: UIColor = FlatGray()
-    static let selectedIconColor: UIColor = vengaWatermelon
-    static let destinationTitleColor: UIColor = .white
-    static let sectionLineColor: UIColor = .white
-    static let sectionTitleColor: UIColor = .white
-    static let buttonTextColor: UIColor = .white
-    static let stripeErrorColor: UIColor = FlatWatermelon()
-    static let secondaryBackgroundColor: UIColor = FlatBlack()
-    
+
     // sizes
     static let defaultRowEstimate: CGFloat = 60.0
-    
     
     static let buttonWidth: CGFloat = 280.0
     static let buttonHeight: CGFloat = 40.0
