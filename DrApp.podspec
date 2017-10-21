@@ -147,5 +147,5 @@ Pod::Spec.new do |s|
   s.dependency "ImageSlideshow/Alamofire"
   s.dependency "SwiftIconFont", "= 2.7.2"
   s.dependency "Eureka", "= 4.0.1"
-
+  s.dependency "JGProgressHUD", "= 2.0"
 end
