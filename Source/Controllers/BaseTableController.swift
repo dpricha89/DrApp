@@ -13,13 +13,11 @@ import TTGSnackbar
 open class BaseTableController: UITableViewController, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
     // shared libs
-    //let loading = Loading()
-    //let cache = Cache.sharedInstance
-    //let backend = Backend.sharedClient
-    //let alerter = Alerter()
-    //let refreshController = UIRefreshControl()
-    //let user = User.sharedInstance.user
-    let snackbar = TTGSnackbar.init(message: "Message", duration: .middle)
+    let loading = Loading()
+    let backend = Backend.sharedClient
+    let alerter = Alerter()
+    let refreshController = UIRefreshControl()
+    let snackbar = TTGSnackbar.init(message: "Loading...", duration: .middle)
 
     open override func viewDidLoad() {
         super.viewDidLoad()

@@ -135,7 +135,17 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "DZNEmptyDataSet"
-  s.dependency "TTGSnackbar"
+  s.dependency "DZNEmptyDataSet" , '= 1.8.1'
+  s.dependency "TTGSnackbar", "= 1.7.0"
+  s.dependency "SnapKit", "= 4.0.0"
+  s.dependency "SwiftyJSON" , '= 1.8.1'
+  s.dependency "Alamofire", "= 1.7.0"
+  s.dependency "AlamofireImage", "= 4.0.0"
+  s.dependency "FSCalendar" , '= 1.8.1'
+  s.dependency "SwiftDate", "= 1.7.0"
+  s.dependency "SnapKit", "= 4.0.0"
+  s.dependency "ImageSlideshow" , '= 1.8.1'
+  s.dependency "ImageSlideshow/Alamofire", "= 1.7.0"
+  s.dependency "SwiftIcons", "= 1.5.1"
 
 end
