@@ -2,6 +2,9 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - DZNEmptyDataSet (1.8.1)
   - Eureka (4.0.1)
   - FSCalendar (2.7.9)
@@ -11,6 +14,7 @@ PODS:
     - AlamofireImage (~> 3.0)
     - ImageSlideshow/Core
   - ImageSlideshow/Core (1.4.1)
+  - JGProgressHUD (2.0)
   - SnapKit (4.0.0)
   - SwiftDate (4.4.1)
   - SwiftIconFont (2.7.2)
@@ -20,11 +24,13 @@ PODS:
 DEPENDENCIES:
   - Alamofire (= 4.5.1)
   - AlamofireImage (= 3.3.0)
+  - ChameleonFramework (= 2.1.0)
   - DZNEmptyDataSet (= 1.8.1)
   - Eureka (= 4.0.1)
   - FSCalendar (= 2.7.9)
   - ImageSlideshow (= 1.4.1)
   - ImageSlideshow/Alamofire
+  - JGProgressHUD (= 2.0)
   - SnapKit (= 4.0.0)
   - SwiftDate (= 4.4.1)
   - SwiftIconFont (= 2.7.2)
@@ -34,16 +40,18 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
   FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   ImageSlideshow: 1bb0e610e28a71e8936d57265d882f61714a470b
+  JGProgressHUD: c402c0f41fc291ca7e33bba2f999118d9682dd9c
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftDate: a70a534d4feed03b2a2b575e36bef82dc2286a8d
   SwiftIconFont: e13dc39c257121e1141375bb338c02e686ef410b
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TTGSnackbar: 058485c43a1cdbdfc988d41cb23c23f008df958d
 
-PODFILE CHECKSUM: fcb43ce81140ad584a0c0870fdf2158cc9863940
+PODFILE CHECKSUM: f46db6d7e8f484f66e2d5e81eae49fa61eb7e245
 
 COCOAPODS: 1.1.1

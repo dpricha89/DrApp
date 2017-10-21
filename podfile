@@ -19,5 +19,5 @@ target 'DrApp' do
   pod "SwiftIconFont", "= 2.7.2"
   pod "Eureka", "= 4.0.1"
   pod "JGProgressHUD", "= 2.0"
+  pod "ChameleonFramework", "= 2.1.0"
 end
-
