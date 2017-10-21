@@ -140,7 +140,7 @@ Pod::Spec.new do |s|
   s.dependency "SnapKit", "= 4.0.0"
   s.dependency "SwiftyJSON" , '= 3.1.4'
   s.dependency "Alamofire", "= 4.5.1"
-  s.dependency "AlamofireImage", "= 4.0.0"
+  s.dependency "AlamofireImage", "= 3.3.0"
   s.dependency "FSCalendar" , '= 2.7.9'
   s.dependency "SwiftDate", "= 4.4.1"
   s.dependency "ImageSlideshow" , '= 1.3.2'
