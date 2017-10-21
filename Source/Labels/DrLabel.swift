@@ -10,7 +10,7 @@ import UIKit
 
 open class DrLabel: UILabel {
 
-    open override public func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         self.textColor = .white
     }

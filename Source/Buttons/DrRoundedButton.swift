@@ -10,7 +10,7 @@ import UIKit
 
 open class VengaButton: UIButton {
 
-    override public func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         layoutRoundRectLayer()
     }
