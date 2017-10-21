@@ -8,14 +8,14 @@
 
 import UIKit
 
-class InputController: BaseController {
+open class InputController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // dismiss keyboard on tap
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        self.view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {

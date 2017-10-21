@@ -9,14 +9,14 @@ import UIKit
 import JGProgressHUD
 import FontAwesome_swift
 
-class Alerter: NSObject {
+open class Alerter: NSObject {
     
     /*
      * @brief adds an error alert to the view
      * @param msg: error message to display
      * @param view: view to add the alert to
      */
-    func error (_ msg: String, view: UIView) {
+    open func error (_ msg: String, view: UIView) {
         // create a new alert view and add it to the view
         let progressHud = JGProgressHUD()
         progressHud.indicatorView = JGProgressHUDErrorIndicatorView.init()
@@ -24,7 +24,7 @@ class Alerter: NSObject {
         progressHud.position = JGProgressHUDPosition.bottomCenter
         progressHud.textLabel.text = msg
         progressHud.show(in: view)
-        progressHud.dismiss(afterDelay: GlobalConst.alertDelay)
+        progressHud.dismiss(afterDelay: LibConst.alertDelay)
     }
     
     /*
@@ -32,7 +32,7 @@ class Alerter: NSObject {
      * @param msg: message to display
      * @param view: view to add the alert to
      */
-    func success (_ msg: String, view: UIView) {
+    open func success (_ msg: String, view: UIView) {
         // create a new alert view and add it to the view
         let progressHud = JGProgressHUD()
         progressHud.indicatorView = JGProgressHUDSuccessIndicatorView.init()
@@ -40,6 +40,6 @@ class Alerter: NSObject {
         progressHud.position = JGProgressHUDPosition.bottomCenter
         progressHud.textLabel.text = msg
         progressHud.show(in: view)
-        progressHud.dismiss(afterDelay: GlobalConst.alertDelay)
+        progressHud.dismiss(afterDelay: LibConst.alertDelay)
     }
 }

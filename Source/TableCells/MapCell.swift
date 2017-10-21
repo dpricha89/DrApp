@@ -11,11 +11,11 @@ import MapKit
 import SnapKit
 import ChameleonFramework
 
-class MapCell: UITableViewCell, MKMapViewDelegate {
+open class MapCell: UITableViewCell, MKMapViewDelegate {
     
     let map = MKMapView()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Setup the delegate
@@ -32,19 +32,11 @@ class MapCell: UITableViewCell, MKMapViewDelegate {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    open required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    func addAnnotation(lat: Float, lng: Float) {
+    open func addAnnotation(lat: Float, lng: Float) {
         let annotation = MKPointAnnotation()
         annotation.coordinate.latitude = CLLocationDegrees(lat)
         annotation.coordinate.longitude = CLLocationDegrees(lng)
@@ -53,7 +45,7 @@ class MapCell: UITableViewCell, MKMapViewDelegate {
     }
     
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    open func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKPointAnnotation) {
             return nil
         }

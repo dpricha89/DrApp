@@ -9,14 +9,14 @@
 import UIKit
 import SnapKit
 
-class AboutHostCell: UITableViewCell {
+open class AboutHostCell: UITableViewCell {
     
     let hostName = UILabel()
     let title = UILabel()
     let hostImage = UIImageView()
     let hostDescription = UILabel()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Make the select color none
@@ -57,19 +57,7 @@ class AboutHostCell: UITableViewCell {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    open required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
-    
 }

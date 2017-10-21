@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class DetailsCell: UITableViewCell {
+open class DetailsCell: UITableViewCell {
     
     var firstKeyValue = UILabel()
     var firstValue = UILabel()
@@ -17,7 +17,7 @@ class DetailsCell: UITableViewCell {
     var secondValue = UILabel()
     
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Make the select color none
@@ -26,7 +26,6 @@ class DetailsCell: UITableViewCell {
         
         let middle = self.contentView.bounds.width/2
         let width = self.contentView.bounds.width
-        
         
         self.contentView.addSubview(self.firstKeyValue)
         self.firstKeyValue.textColor = .white
@@ -45,7 +44,6 @@ class DetailsCell: UITableViewCell {
             make.right.equalTo(middle)
         }
         
-        
         self.contentView.addSubview(self.secondKeyValue)
         self.secondKeyValue.textColor = .white
         self.secondKeyValue.snp.makeConstraints { (make) -> Void in
@@ -62,22 +60,9 @@ class DetailsCell: UITableViewCell {
             make.left.equalTo(self.contentView).offset(middle + 20)
             make.right.equalTo(width).offset(-5)
         }
-        
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    open required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
-    
 }

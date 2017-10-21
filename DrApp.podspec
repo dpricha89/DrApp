@@ -143,8 +143,9 @@ Pod::Spec.new do |s|
   s.dependency "AlamofireImage", "= 3.3.0"
   s.dependency "FSCalendar" , '= 2.7.9'
   s.dependency "SwiftDate", "= 4.4.1"
-  s.dependency "ImageSlideshow" , '= 1.3.2'
+  s.dependency "ImageSlideshow" , '= 1.4.1'
   s.dependency "ImageSlideshow/Alamofire"
   s.dependency "SwiftIconFont", "= 2.7.2"
+  s.dependency "Eureka", "= 4.0.1"
 
 end

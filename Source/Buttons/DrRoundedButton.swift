@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VengaButton: UIButton {
+open class VengaButton: UIButton {
 
     override public func layoutSubviews() {
         super.layoutSubviews()
@@ -16,8 +16,8 @@ class VengaButton: UIButton {
     }
     
     private func layoutRoundRectLayer() {
-        self.layer.cornerRadius = GlobalConst.cornerRadius
-        self.titleLabel?.textColor = GlobalConst.buttonTextColor
+        self.layer.cornerRadius = LibConst.cornerRadius
+        self.titleLabel?.textColor = LibConst.buttonTextColor
     }
 
 }

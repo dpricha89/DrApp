@@ -9,9 +9,9 @@
 import UIKit
 import FontAwesome_swift
 
-class Navi: UINavigationController {
+open class DrNavi: UINavigationController {
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationBar.isTranslucent = true
@@ -22,13 +22,9 @@ class Navi: UINavigationController {
         
     }
     
-    override func didReceiveMemoryWarning() {
+    open override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func shareClicked() {
-        
     }
    
 }

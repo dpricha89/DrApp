@@ -8,9 +8,9 @@
 
 import UIKit
 
-class VengaLabel: UILabel {
+open class DrLabel: UILabel {
 
-    override public func layoutSubviews() {
+    open override public func layoutSubviews() {
         super.layoutSubviews()
         self.textColor = .white
     }

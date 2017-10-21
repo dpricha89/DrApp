@@ -9,11 +9,11 @@
 import UIKit
 import SnapKit
 
-class UserImageCell: UITableViewCell {
+open class UserImageCell: UITableViewCell {
     
     let userImage = UIImageView()
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Make the select color none
@@ -29,8 +29,7 @@ class UserImageCell: UITableViewCell {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    open required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }

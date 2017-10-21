@@ -9,13 +9,13 @@
 import UIKit
 import FontAwesome_swift
 
-class IconRow: UITableViewCell {
+open class IconRow: UITableViewCell {
     
     var collectionView: UICollectionView!
     let imageNames = ["fa-glass", "fa-leaf", "fa-taxi", "fa-bed", "fa-bicycle", "fa-camera-retro", "fa-coffee"] //Load Images in Image Assets load all  Image Names in Array
     let gameNames = ["Drinks", "Eco", "Taxi", "Bed", "Bikes", "Photos", "Coffee"] //Titles Array for Images
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         // Defaults
         self.selectionStyle = .none
@@ -38,16 +38,9 @@ class IconRow: UITableViewCell {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    open required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-    }
-
 }
 
 extension IconRow: UICollectionViewDelegate, UICollectionViewDataSource {

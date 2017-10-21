@@ -9,16 +9,12 @@
 import UIKit
 import SnapKit
 
-class IconCell: UICollectionViewCell {
+open class IconCell: UICollectionViewCell {
     
     var collectionImageView = UIImageView()
     var collectionImageTitle = UILabel()
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         // Setup the image icon size

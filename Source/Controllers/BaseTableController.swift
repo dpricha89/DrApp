@@ -12,6 +12,8 @@ import TTGSnackbar
 
 open class BaseTableController: UITableViewController, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
+    // public params
+    
     // shared libs
     let loading = Loading()
     let backend = Backend.sharedClient
@@ -26,7 +28,7 @@ open class BaseTableController: UITableViewController, DZNEmptyDataSetSource, DZ
         self.setupTable()
         
         // This is needed for the auto cell height cells
-        tableView.estimatedRowHeight = 60.0
+        tableView.estimatedRowHeight = LibConst.defaultRowEstimate
     }
 
     open override func didReceiveMemoryWarning() {
@@ -38,12 +40,11 @@ open class BaseTableController: UITableViewController, DZNEmptyDataSetSource, DZ
         super.viewDidAppear(animated)
         // This ensures that the auto sizing of the description cell works.
         // This is a bug and should be revisited
-        self.tableView.reloadData()
+        // self.tableView.reloadData()
     }
 
     open func setupTable(){
-        self.tableView.rowHeight = 100
-        self.tableView.backgroundColor = .green
+
         // set the background
         //self.tableView.backgroundColor = GlobalConst.backgroundColor
         // setup the table
