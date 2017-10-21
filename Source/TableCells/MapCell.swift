@@ -60,7 +60,7 @@ open class MapCell: UITableViewCell, MKMapViewDelegate {
         
         // Add custom annotation
         if let annotationView = annotationView {
-            annotationView.image = UIImage.fontAwesomeIcon(name: .mapMarker, textColor: FlatMint(), size: CGSize(width: 50, height: 50))
+            //annotationView.image = UIImage.fontAwesomeIcon(name: .mapMarker, textColor: FlatMint(), size: CGSize(width: 50, height: 50))
         }
         return annotationView
     }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FontAwesome_swift
 
 open class DrNavi: UINavigationController {
     

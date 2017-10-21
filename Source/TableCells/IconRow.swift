@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FontAwesome_swift
 
 open class IconRow: UITableViewCell {
     
@@ -50,7 +49,7 @@ extension IconRow: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: IconCell = collectionView.dequeueReusableCell(withReuseIdentifier: "IconCell", for: indexPath) as! IconCell
-        cell.collectionImageView.image = UIImage.fontAwesomeIcon(code: imageNames[indexPath.row], textColor: .gray, size: CGSize(width: 30, height: 30), backgroundColor: .clear)
+        //cell.collectionImageView.image = UIImage.fontAwesomeIcon(code: imageNames[indexPath.row], textColor: .gray, size: CGSize(width: 30, height: 30), backgroundColor: .clear)
         cell.collectionImageTitle.text = gameNames[indexPath.row]
         print(gameNames[indexPath.row])
         return cell

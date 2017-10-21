@@ -7,7 +7,6 @@
 //
 import UIKit
 import JGProgressHUD
-import FontAwesome_swift
 
 open class Alerter: NSObject {
     
