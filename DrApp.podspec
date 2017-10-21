@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DrApp"
+  s.module_name  = "DrApp"
   s.version      = "0.0.2"
   s.summary      = "A base app class with many helpers for speeding up development"
 
