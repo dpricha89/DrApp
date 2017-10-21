@@ -40,7 +40,6 @@ extension UIActivityIndicatorView: ActivityIndicatorView {
 }
 
 /// Default activity indicator factory creating UIActivityIndicatorView instances
-@objcMembers
 open class DefaultActivityIndicator: ActivityIndicatorFactory {
     /// activity indicator style
     open var style: UIActivityIndicatorViewStyle

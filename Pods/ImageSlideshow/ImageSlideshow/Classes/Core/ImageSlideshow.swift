@@ -42,7 +42,6 @@ public enum ImagePreload {
 }
 
 /// Main view containing the Image Slideshow
-@objcMembers
 open class ImageSlideshow: UIView {
 
     /// Scroll View to wrap the slideshow
@@ -216,13 +215,8 @@ open class ImageSlideshow: UIView {
             pageControl.isHidden = self.images.count < 2
         }
 
-        var pageControlBottomInset: CGFloat = 12.0
-        if #available(iOS 11.0, *) {
-            pageControlBottomInset += self.safeAreaInsets.bottom
-        }
-
         pageControl.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: 10)
-        pageControl.center = CGPoint(x: frame.size.width / 2, y: frame.size.height - pageControlBottomInset)
+        pageControl.center = CGPoint(x: frame.size.width / 2, y: frame.size.height - 12.0)
     }
 
     /// updates frame of the scroll view and its inner items
@@ -354,7 +348,7 @@ open class ImageSlideshow: UIView {
         }
     }
 
-    @objc func slideshowTick(_ timer: Timer) {
+    func slideshowTick(_ timer: Timer) {
         let page = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
         var nextPage = page + 1
 

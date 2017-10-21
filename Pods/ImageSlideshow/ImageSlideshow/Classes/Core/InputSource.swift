@@ -20,7 +20,6 @@ import UIKit
 }
 
 /// Input Source to load plain UIImage
-@objcMembers
 open class ImageSource: NSObject, InputSource {
     var image: UIImage!
 
