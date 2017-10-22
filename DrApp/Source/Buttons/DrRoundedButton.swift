@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class VengaButton: UIButton, FAKE {
+open class VengaButton: UIButton {
 
     open override func layoutSubviews() {
         super.layoutSubviews()
