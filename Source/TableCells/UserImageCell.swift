@@ -13,7 +13,7 @@ open class UserImageCell: UITableViewCell {
     
     let userImage = UIImageView()
 
-    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Make the select color none
@@ -23,13 +23,13 @@ open class UserImageCell: UITableViewCell {
         // setup the placement of the photo
         self.contentView.addSubview(self.userImage)
         self.userImage.snp.makeConstraints { (make) -> Void in
-            make.height.equalTo(GlobalConst.profileImageHeight)
-            make.width.equalTo(GlobalConst.profileImageWidth)
+            make.height.equalTo(LibConst.profileImageHeight)
+            make.width.equalTo(LibConst.profileImageWidth)
             make.center.equalTo(self.contentView)
         }
     }
     
-    open required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

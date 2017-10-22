@@ -23,12 +23,12 @@ open class TitleCell: UITableViewCell {
         self.backgroundColor = .clear
         self.selectionStyle = .none
         
-        self.titleLabel.textColor = GlobalConst.sectionTitleColor
+        self.titleLabel.textColor = LibConst.sectionTitleColor
         self.titleLabel.font = .systemFont(ofSize: 25)
         self.contentView.addSubview(self.titleLabel)
         titleLabel.snp.makeConstraints { (make) -> Void in
-            make.height.equalTo(GlobalConst.largeLabelhieght)
-            make.left.equalTo(self.contentView).offset(GlobalConst.smallLeftOffset)
+            make.height.equalTo(LibConst.largeLabelhieght)
+            make.left.equalTo(self.contentView).offset(LibConst.smallLeftOffset)
             make.bottom.equalTo(self.contentView)
         }
     }

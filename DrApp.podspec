@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "DrApp"
   s.module_name  = "DrApp"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A base app class with many helpers for speeding up development"
 
   # This description is used to generate tags and improve search results.

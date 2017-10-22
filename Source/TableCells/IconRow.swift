@@ -14,7 +14,7 @@ open class IconRow: UITableViewCell {
     let imageNames = ["fa-glass", "fa-leaf", "fa-taxi", "fa-bed", "fa-bicycle", "fa-camera-retro", "fa-coffee"] //Load Images in Image Assets load all  Image Names in Array
     let gameNames = ["Drinks", "Eco", "Taxi", "Bed", "Bikes", "Photos", "Coffee"] //Titles Array for Images
 
-    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         // Defaults
         self.selectionStyle = .none
@@ -37,24 +37,26 @@ open class IconRow: UITableViewCell {
         }
     }
     
-    open required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension IconRow: UICollectionViewDelegate, UICollectionViewDataSource {
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageNames.count
     }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: IconCell = collectionView.dequeueReusableCell(withReuseIdentifier: "IconCell", for: indexPath) as! IconCell
         //cell.collectionImageView.image = UIImage.fontAwesomeIcon(code: imageNames[indexPath.row], textColor: .gray, size: CGSize(width: 30, height: 30), backgroundColor: .clear)
         cell.collectionImageTitle.text = gameNames[indexPath.row]
         print(gameNames[indexPath.row])
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let clickedIndex = imageNames[indexPath.row]
         NSLog("Clicked at index \(clickedIndex)")
     }

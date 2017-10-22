@@ -15,11 +15,11 @@ open class BaseTableController: UITableViewController, DZNEmptyDataSetSource, DZ
     // public params
     
     // shared libs
-    open let loading = Loading()
-    open let backend = Backend.sharedClient
-    open let alerter = Alerter()
-    open let refreshController = UIRefreshControl()
-    open let snackbar = TTGSnackbar.init(message: "Loading...", duration: .middle)
+    public let loading = Loading()
+    public let backend = Backend.sharedClient
+    public let alerter = Alerter()
+    public let refreshController = UIRefreshControl()
+    public let snackbar = TTGSnackbar.init(message: "Loading...", duration: .middle)
 
     open override func viewDidLoad() {
         super.viewDidLoad()

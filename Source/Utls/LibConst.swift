@@ -21,6 +21,8 @@ struct LibConst {
     
     // colors
     static let logoutLabelColor: UIColor = .black
+    static let buttonTextColor: UIColor = .white
+    static let sectionTitleColor: UIColor = .white
 
     // sizes
     static let defaultRowEstimate: CGFloat = 60.0

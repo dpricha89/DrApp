@@ -14,7 +14,7 @@ open class SlideshowCell: UITableViewCell {
     
     let slideshow = ImageSlideshow()
     
-    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Make the select color none
@@ -35,7 +35,7 @@ open class SlideshowCell: UITableViewCell {
         }
     }
     
-    open required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

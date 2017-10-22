@@ -17,7 +17,7 @@ open class DetailsCell: UITableViewCell {
     var secondValue = UILabel()
     
     
-    open override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         // Make the select color none
@@ -62,7 +62,7 @@ open class DetailsCell: UITableViewCell {
         }
     }
     
-    open required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

@@ -14,7 +14,7 @@ open class LoadingView: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         // start the spinner
-        self.loading.start(view: self.view)
+        //self.loading.start(view: self.view)
     }
     
     open override func didReceiveMemoryWarning() {
