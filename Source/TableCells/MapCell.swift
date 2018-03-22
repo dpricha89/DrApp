@@ -9,7 +9,6 @@
 import UIKit
 import MapKit
 import SnapKit
-import ChameleonFramework
 
 open class MapCell: UITableViewCell, MKMapViewDelegate {
     
