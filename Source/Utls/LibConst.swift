@@ -44,7 +44,6 @@ struct LibConst {
     static let labelOffset: CGFloat = 1
     static let loginOffset: CGFloat = 10.0
     static let spacingOffset: CGFloat = 10.0
-    static let homelessDetailImageWidth: CGFloat = 140.0
     static let smallLeftOffset: CGFloat = 20.0
     static let smallTopOffset: CGFloat = 5.0
     static let smallLabelHeight: CGFloat = 15
@@ -59,6 +58,7 @@ struct LibConst {
     static let largeLabelhieght: CGFloat = 28
     static let profileImageHeight: CGFloat = 140.0
     static let profileImageWidth: Float = 140.0
+    static let defaultOffset: Float = 10.0
 
 
 }

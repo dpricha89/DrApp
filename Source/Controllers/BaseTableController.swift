@@ -16,7 +16,6 @@ open class BaseTableController: UITableViewController, DZNEmptyDataSetSource, DZ
     
     // shared libs
     public let loading = Loading()
-    public let backend = Backend.sharedClient
     public let alerter = Alerter()
     public let refreshController = UIRefreshControl()
     public let snackbar = TTGSnackbar.init(message: "Loading...", duration: .middle)
@@ -44,32 +43,17 @@ open class BaseTableController: UITableViewController, DZNEmptyDataSetSource, DZ
     }
 
     open func setupTable(){
-
-        // set the background
-        //self.tableView.backgroundColor = GlobalConst.backgroundColor
-        // setup the table
-        /*
-        self.tableView.separatorStyle = .none
-        self.tableView.register(DestinationCell.self, forCellReuseIdentifier: "DestinationCell")
-        self.tableView.register(TripCell.self, forCellReuseIdentifier: "TripCell")
         self.tableView.register(UserImageCell.self, forCellReuseIdentifier: "UserImageCell")
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Default")
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
-        self.tableView.register(DestinationCell.self, forCellReuseIdentifier: "DestinationCell")
         self.tableView.register(DescriptionCell.self, forCellReuseIdentifier: "DescriptionCell")
-        self.tableView.register(ExperienceCell.self, forCellReuseIdentifier: "ExperienceCell")
         self.tableView.register(IconRow.self, forCellReuseIdentifier: "IconRow")
         self.tableView.register(TitleCell.self, forCellReuseIdentifier: "TitleCell")        
         self.tableView.register(DetailsCell.self, forCellReuseIdentifier: "DetailsCell")
-        self.tableView.register(ReviewCell.self, forCellReuseIdentifier: "ReviewCell")
         self.tableView.register(MapCell.self, forCellReuseIdentifier: "MapCell")
         self.tableView.register(SlideshowCell.self, forCellReuseIdentifier: "SlideshowCell")
         self.tableView.register(BasicImageCell.self, forCellReuseIdentifier: "BasicImageCell")
-        self.tableView.register(ReviewCell.self, forCellReuseIdentifier: "ReviewCell")
         self.tableView.register(AboutHostCell.self, forCellReuseIdentifier: "AboutHostCell")
-        
-        //self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        */
     }
     
 }

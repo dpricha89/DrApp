@@ -137,7 +137,7 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "DZNEmptyDataSet" , '= 1.8.1'
   s.dependency "TTGSnackbar", "= 1.7.0"
-  s.dependency "SnapKit", "= 3.2.0"
+  s.dependency "SnapKit", "= 4.0.0"
   s.dependency "SwiftyJSON"
   s.dependency "Alamofire", "= 4.5.1"
   s.dependency "AlamofireImage", "= 3.3.0"
@@ -148,6 +148,5 @@ Pod::Spec.new do |s|
   #s.dependency "SwiftIconFont"
   s.dependency "Eureka", "= 4.0.1"
   s.dependency "JGProgressHUD", "= 2.0"
-  s.dependency "IntervalSlider", "= 0.0.1"
 
 end
